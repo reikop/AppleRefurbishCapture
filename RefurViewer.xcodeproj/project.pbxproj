@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A470A751BB0396F0012DB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A741BB0396F0012DB7F /* AppDelegate.swift */; };
+		4A470A771BB0396F0012DB7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A761BB0396F0012DB7F /* ViewController.swift */; };
+		4A470A7A1BB0396F0012DB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A470A781BB0396F0012DB7F /* Main.storyboard */; };
+		4A470A7D1BB0396F0012DB7F /* RefurViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A7B1BB0396F0012DB7F /* RefurViewer.xcdatamodeld */; };
+		4A470A7F1BB0396F0012DB7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A470A7E1BB0396F0012DB7F /* Assets.xcassets */; };
+		4A470A821BB0396F0012DB7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */; };
+		4A470A8D1BB0396F0012DB7F /* RefurViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A8C1BB0396F0012DB7F /* RefurViewerTests.swift */; };
+		4A470A981BB0396F0012DB7F /* RefurViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A971BB0396F0012DB7F /* RefurViewerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A470A891BB0396F0012DB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A470A691BB0396F0012DB7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A470A701BB0396F0012DB7F;
+			remoteInfo = RefurViewer;
+		};
+		4A470A941BB0396F0012DB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A470A691BB0396F0012DB7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A470A701BB0396F0012DB7F;
+			remoteInfo = RefurViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A470A711BB0396F0012DB7F /* RefurViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefurViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A470A741BB0396F0012DB7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A470A761BB0396F0012DB7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A470A791BB0396F0012DB7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A470A7C1BB0396F0012DB7F /* RefurViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RefurViewer.xcdatamodel; sourceTree = "<group>"; };
+		4A470A7E1BB0396F0012DB7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A470A811BB0396F0012DB7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A470A831BB0396F0012DB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A470A881BB0396F0012DB7F /* RefurViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefurViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A470A8C1BB0396F0012DB7F /* RefurViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefurViewerTests.swift; sourceTree = "<group>"; };
+		4A470A8E1BB0396F0012DB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A470A931BB0396F0012DB7F /* RefurViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefurViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A470A971BB0396F0012DB7F /* RefurViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefurViewerUITests.swift; sourceTree = "<group>"; };
+		4A470A991BB0396F0012DB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A470A6E1BB0396F0012DB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A851BB0396F0012DB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A901BB0396F0012DB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A470A681BB0396F0012DB7F = {
+			isa = PBXGroup;
+			children = (
+				4A470A731BB0396F0012DB7F /* RefurViewer */,
+				4A470A8B1BB0396F0012DB7F /* RefurViewerTests */,
+				4A470A961BB0396F0012DB7F /* RefurViewerUITests */,
+				4A470A721BB0396F0012DB7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A470A721BB0396F0012DB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A470A711BB0396F0012DB7F /* RefurViewer.app */,
+				4A470A881BB0396F0012DB7F /* RefurViewerTests.xctest */,
+				4A470A931BB0396F0012DB7F /* RefurViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A470A731BB0396F0012DB7F /* RefurViewer */ = {
+			isa = PBXGroup;
+			children = (
+				4A470A741BB0396F0012DB7F /* AppDelegate.swift */,
+				4A470A761BB0396F0012DB7F /* ViewController.swift */,
+				4A470A781BB0396F0012DB7F /* Main.storyboard */,
+				4A470A7E1BB0396F0012DB7F /* Assets.xcassets */,
+				4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */,
+				4A470A831BB0396F0012DB7F /* Info.plist */,
+				4A470A7B1BB0396F0012DB7F /* RefurViewer.xcdatamodeld */,
+			);
+			path = RefurViewer;
+			sourceTree = "<group>";
+		};
+		4A470A8B1BB0396F0012DB7F /* RefurViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A470A8C1BB0396F0012DB7F /* RefurViewerTests.swift */,
+				4A470A8E1BB0396F0012DB7F /* Info.plist */,
+			);
+			path = RefurViewerTests;
+			sourceTree = "<group>";
+		};
+		4A470A961BB0396F0012DB7F /* RefurViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A470A971BB0396F0012DB7F /* RefurViewerUITests.swift */,
+				4A470A991BB0396F0012DB7F /* Info.plist */,
+			);
+			path = RefurViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A470A701BB0396F0012DB7F /* RefurViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A470A9C1BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewer" */;
+			buildPhases = (
+				4A470A6D1BB0396F0012DB7F /* Sources */,
+				4A470A6E1BB0396F0012DB7F /* Frameworks */,
+				4A470A6F1BB0396F0012DB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RefurViewer;
+			productName = RefurViewer;
+			productReference = 4A470A711BB0396F0012DB7F /* RefurViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A470A871BB0396F0012DB7F /* RefurViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A470A9F1BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerTests" */;
+			buildPhases = (
+				4A470A841BB0396F0012DB7F /* Sources */,
+				4A470A851BB0396F0012DB7F /* Frameworks */,
+				4A470A861BB0396F0012DB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A470A8A1BB0396F0012DB7F /* PBXTargetDependency */,
+			);
+			name = RefurViewerTests;
+			productName = RefurViewerTests;
+			productReference = 4A470A881BB0396F0012DB7F /* RefurViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A470A921BB0396F0012DB7F /* RefurViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A470AA21BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerUITests" */;
+			buildPhases = (
+				4A470A8F1BB0396F0012DB7F /* Sources */,
+				4A470A901BB0396F0012DB7F /* Frameworks */,
+				4A470A911BB0396F0012DB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A470A951BB0396F0012DB7F /* PBXTargetDependency */,
+			);
+			name = RefurViewerUITests;
+			productName = RefurViewerUITests;
+			productReference = 4A470A931BB0396F0012DB7F /* RefurViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A470A691BB0396F0012DB7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ray Park";
+				TargetAttributes = {
+					4A470A701BB0396F0012DB7F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J7398Q2877;
+					};
+					4A470A871BB0396F0012DB7F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J7398Q2877;
+						TestTargetID = 4A470A701BB0396F0012DB7F;
+					};
+					4A470A921BB0396F0012DB7F = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J7398Q2877;
+						TestTargetID = 4A470A701BB0396F0012DB7F;
+					};
+				};
+			};
+			buildConfigurationList = 4A470A6C1BB0396F0012DB7F /* Build configuration list for PBXProject "RefurViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A470A681BB0396F0012DB7F;
+			productRefGroup = 4A470A721BB0396F0012DB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A470A701BB0396F0012DB7F /* RefurViewer */,
+				4A470A871BB0396F0012DB7F /* RefurViewerTests */,
+				4A470A921BB0396F0012DB7F /* RefurViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A470A6F1BB0396F0012DB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A470A821BB0396F0012DB7F /* LaunchScreen.storyboard in Resources */,
+				4A470A7F1BB0396F0012DB7F /* Assets.xcassets in Resources */,
+				4A470A7A1BB0396F0012DB7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A861BB0396F0012DB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A911BB0396F0012DB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A470A6D1BB0396F0012DB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A470A771BB0396F0012DB7F /* ViewController.swift in Sources */,
+				4A470A751BB0396F0012DB7F /* AppDelegate.swift in Sources */,
+				4A470A7D1BB0396F0012DB7F /* RefurViewer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A841BB0396F0012DB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A470A8D1BB0396F0012DB7F /* RefurViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A470A8F1BB0396F0012DB7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A470A981BB0396F0012DB7F /* RefurViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A470A8A1BB0396F0012DB7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A470A701BB0396F0012DB7F /* RefurViewer */;
+			targetProxy = 4A470A891BB0396F0012DB7F /* PBXContainerItemProxy */;
+		};
+		4A470A951BB0396F0012DB7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A470A701BB0396F0012DB7F /* RefurViewer */;
+			targetProxy = 4A470A941BB0396F0012DB7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A470A781BB0396F0012DB7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A470A791BB0396F0012DB7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A470A811BB0396F0012DB7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A470A9A1BB0396F0012DB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A470A9B1BB0396F0012DB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A470A9D1BB0396F0012DB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RefurViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A470A9E1BB0396F0012DB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RefurViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A470AA01BB0396F0012DB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RefurViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RefurViewer.app/RefurViewer";
+			};
+			name = Debug;
+		};
+		4A470AA11BB0396F0012DB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RefurViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RefurViewer.app/RefurViewer";
+			};
+			name = Release;
+		};
+		4A470AA31BB0396F0012DB7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RefurViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RefurViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4A470AA41BB0396F0012DB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RefurViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rk.io.RefurViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RefurViewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A470A6C1BB0396F0012DB7F /* Build configuration list for PBXProject "RefurViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A470A9A1BB0396F0012DB7F /* Debug */,
+				4A470A9B1BB0396F0012DB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A470A9C1BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A470A9D1BB0396F0012DB7F /* Debug */,
+				4A470A9E1BB0396F0012DB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A470A9F1BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A470AA01BB0396F0012DB7F /* Debug */,
+				4A470AA11BB0396F0012DB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A470AA21BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A470AA31BB0396F0012DB7F /* Debug */,
+				4A470AA41BB0396F0012DB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A470A7B1BB0396F0012DB7F /* RefurViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A470A7C1BB0396F0012DB7F /* RefurViewer.xcdatamodel */,
+			);
+			currentVersion = 4A470A7C1BB0396F0012DB7F /* RefurViewer.xcdatamodel */;
+			path = RefurViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4A470A691BB0396F0012DB7F /* Project object */;
+}
