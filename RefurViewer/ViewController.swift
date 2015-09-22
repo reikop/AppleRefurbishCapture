@@ -20,7 +20,7 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
   
        
         
-        let url:NSURL! = NSURL(string: "http://reikop.com:8888/mac/fr")!
+        let url:NSURL! = NSURL(string: "http://reikop.com:8888")!
         let data = NSData(contentsOfURL: url)
         
         
