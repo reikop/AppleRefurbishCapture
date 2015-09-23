@@ -15,6 +15,7 @@
 		4A470A821BB0396F0012DB7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */; };
 		4A470A8D1BB0396F0012DB7F /* RefurViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A8C1BB0396F0012DB7F /* RefurViewerTests.swift */; };
 		4A470A981BB0396F0012DB7F /* RefurViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A470A971BB0396F0012DB7F /* RefurViewerUITests.swift */; };
+		4A492EA21BB2456B009543A2 /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A492EA11BB2456B009543A2 /* ListTableCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4A470A931BB0396F0012DB7F /* RefurViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefurViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A470A971BB0396F0012DB7F /* RefurViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefurViewerUITests.swift; sourceTree = "<group>"; };
 		4A470A991BB0396F0012DB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A492EA11BB2456B009543A2 /* ListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				4A470A741BB0396F0012DB7F /* AppDelegate.swift */,
 				4A470A761BB0396F0012DB7F /* ViewController.swift */,
+				4A492EA11BB2456B009543A2 /* ListTableCell.swift */,
 				4A470A781BB0396F0012DB7F /* Main.storyboard */,
 				4A470A7E1BB0396F0012DB7F /* Assets.xcassets */,
-				4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */,
 				4A470A831BB0396F0012DB7F /* Info.plist */,
 				4A470A7B1BB0396F0012DB7F /* RefurViewer.xcdatamodeld */,
+				4A470A801BB0396F0012DB7F /* LaunchScreen.storyboard */,
 			);
 			path = RefurViewer;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				4A470A771BB0396F0012DB7F /* ViewController.swift in Sources */,
 				4A470A751BB0396F0012DB7F /* AppDelegate.swift in Sources */,
+				4A492EA21BB2456B009543A2 /* ListTableCell.swift in Sources */,
 				4A470A7D1BB0396F0012DB7F /* RefurViewer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				4A470A9E1BB0396F0012DB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A470A9F1BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				4A470AA11BB0396F0012DB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A470AA21BB0396F0012DB7F /* Build configuration list for PBXNativeTarget "RefurViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				4A470AA41BB0396F0012DB7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

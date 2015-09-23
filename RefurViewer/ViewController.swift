@@ -22,11 +22,11 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
         
         let url:NSURL! = NSURL(string: "http://reikop.com:8888")!
         let data = NSData(contentsOfURL: url)
-        
+    
         
         do{
             let json:NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-            items = json["data"] as! NSArray
+            items = json["data"] as? NSArray
             let updateDt:NSTimeInterval = json.valueForKey("update") as! Double
             let dt = NSDate(timeIntervalSince1970: updateDt / 1000)
             
@@ -36,8 +36,9 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
 //            for item in data{
 //                print(item["title"])
 //            }
-            
+        self.tView.delegate = self
         self.tView.dataSource = self
+        self.tView.rowHeight = 90
         }catch{
             print(error)
         }
@@ -50,24 +51,27 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return swiftBlogs.count;
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tabView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-        cell.textLabel?.text = "test"
-        return cell;
-    }*/
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
        return (items?.count)!
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = tView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = items?[indexPath.row]["title"] as? String
+        let cell:ListTableCell = tView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ListTableCell
+//        cell.textLabel?.text = items?[indexPath.row]["title"] as? String
+        let src:String = items?[indexPath.row]["img"] as! String
+        let title:String = items?[indexPath.row]["title"] as! String
+        let desc:String = items?[indexPath.row]["price"] as! String
+
+        cell.setContent(src, title: title, desc: desc)
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        let href:String = items?[indexPath.row]["href"] as! String
+        let encoded:String = href.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        let url:NSURL = NSURL(string: "http://apple.com\(encoded)")!
+        UIApplication.sharedApplication().openURL(url)
     }
 
     

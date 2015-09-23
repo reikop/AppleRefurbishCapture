@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,13 +21,49 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="8no-bo-uv2">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="8no-bo-uv2" customClass="ListTableCell" customModule="RefurViewer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8no-bo-uv2" id="Ltr-cq-P74">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ap6-Gi-ttR">
+                                                    <rect key="frame" x="8" y="0.0" width="90" height="89.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="PDr-ju-uuO"/>
+                                                        <constraint firstAttribute="width" constant="90" id="qSC-Jt-8xA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAI-ih-Pbe">
+                                                    <rect key="frame" x="108" y="8" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-2v-6de">
+                                                    <rect key="frame" x="103" y="17" width="489" height="64.5"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ap6-Gi-ttR" firstAttribute="centerY" secondItem="Ltr-cq-P74" secondAttribute="centerY" id="0g3-SH-7CQ"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Ap6-Gi-ttR" secondAttribute="leading" id="0ge-bI-2Vs"/>
+                                                <constraint firstItem="JAV-2v-6de" firstAttribute="leading" secondItem="aAI-ih-Pbe" secondAttribute="leading" constant="-5" id="0nq-uk-hv5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JAV-2v-6de" secondAttribute="trailing" id="FEb-er-kUY"/>
+                                                <constraint firstItem="JAV-2v-6de" firstAttribute="bottom" secondItem="Ltr-cq-P74" secondAttribute="bottomMargin" id="Jve-By-h5h"/>
+                                                <constraint firstItem="aAI-ih-Pbe" firstAttribute="leading" secondItem="Ap6-Gi-ttR" secondAttribute="trailing" constant="10" id="Spe-qA-rHD"/>
+                                                <constraint firstItem="aAI-ih-Pbe" firstAttribute="top" secondItem="Ltr-cq-P74" secondAttribute="topMargin" id="iXK-8C-NEU"/>
+                                                <constraint firstItem="JAV-2v-6de" firstAttribute="height" secondItem="Ltr-cq-P74" secondAttribute="height" constant="-25" id="vjK-ph-0m1"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descView" destination="JAV-2v-6de" id="4xx-wZ-o7x"/>
+                                            <outlet property="imgView" destination="Ap6-Gi-ttR" id="LPI-zy-Vf9"/>
+                                            <outlet property="titleView" destination="aAI-ih-Pbe" id="3wI-tO-e6J"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -45,6 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="234"/>
         </scene>
     </scenes>
 </document>
