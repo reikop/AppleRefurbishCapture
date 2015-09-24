@@ -12,6 +12,17 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
    
     @IBOutlet var tView: UITableView!
     
+    @IBAction func searchTouchHandle(sender: AnyObject) {
+        let alert:UIAlertController = UIAlertController()
+        
+        let ok = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
+            
+        }
+        
+        alert.addAction(ok)
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
     
     var items:NSArray?
     
@@ -61,7 +72,7 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
 //        cell.textLabel?.text = items?[indexPath.row]["title"] as? String
         let src:String = items?[indexPath.row]["img"] as! String
         let title:String = items?[indexPath.row]["title"] as! String
-        let desc:String = items?[indexPath.row]["price"] as! String
+        let desc:String = items?[indexPath.row]["specs"] as! String
 
         cell.setContent(src, title: title, desc: desc)
         return cell
